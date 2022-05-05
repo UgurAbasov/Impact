@@ -1,0 +1,32 @@
+{
+    "name": "impact-bot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/bot.js",
+    "scripts": {
+        "dev": "nodemon src/bot.js"
+    },
+    "keywords": [],
+    "author": "Tyler Potts <hello@tylerpotts.co.uk>",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/builders": "^0.8.2",
+        "@discordjs/rest": "^0.1.0-canary.0",
+        "ascii-table": "^0.0.9",
+        "canvas": "^2.9.1",
+        "discord-api-types": "^0.24.0",
+        "discord.js": "^13.6.0",
+        "djs-voice": "^1.2.0",
+        "dotenv": "^10.0.0",
+        "fs": "^0.0.1-security",
+        "glob": "^8.0.1",
+        "moment": "^2.29.2",
+        "mongoose": "^6.3.0",
+        "ms": "^2.1.3",
+        "musico": "^1.0.8",
+        "parse-ms": "^2.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.14"
+    }
+}

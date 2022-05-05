@@ -1,0 +1,27 @@
+{
+    "name": "djs-voice",
+    "version": "1.2.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "author": {
+        "name": "reconlx"
+    },
+    "repository": {
+        "url": "https://github.com/reconlx/djs-voice"
+    },
+    "homepage": "https://reconlx.github.io/djs-voice/",
+    "scripts": {
+        "build": "tsc",
+        "docs": "npx typedoc src/index.ts"
+    },
+    "dependencies": {
+        "discord.js": "^13.0.0-dev.02f55f0.1626782659",
+        "mongoose": "^5.13.0",
+        "ms": "^2.1.3",
+        "reconlx": "^1.3.3"
+    },
+    "devDependencies": {
+        "typedoc": "^0.21.2",
+        "typescript": "^4.3.5"
+    }
+}
