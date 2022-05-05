@@ -30,7 +30,7 @@ module.exports = {
         let verife = new MessageEmbed()
         .setColor("BLUE")
 
-        if(target.roles.cache.hasAll("971390757523042395", "971390757523042395")) {
+        if(target.roles.cache.hasAll("967141844054081597", "967109623930839100 ")) {
             verife.setDescription(`${target} уже верифицырован`)
             interaction.reply({embeds: [verife]})
             return;
@@ -42,7 +42,7 @@ module.exports = {
         return;
        }
 
-       if(!interaction.member.roles.cache.has("971470829063901204")) {
+       if(!interaction.member.roles.cache.hasAll("967105779490500658", "967105591841521704", "967105667301269514", "967183990371020850")) {
         verife.setDescription(`Недостаточно прав`)
         interaction.reply({embeds: [verife]})
         return;
@@ -55,16 +55,18 @@ module.exports = {
         .setColor("#2f3136")
         interaction.reply({embeds: [verifemb], ephemeral: true})
         target.send({embeds: [verifdmemb]})
-        await target.roles.remove("971415962815442984")
+        await target.roles.remove("967100277104713768")
 
 
         if (role === "gif_funny") {
-            await target.roles.add("971390757523042395")
+            await target.roles.add("967109623930839100")
             interaction.editReply({embeds: [verifemb]})
-        } else {
-            await target.roles.add("971434909908484147")
-            interaction.editReply({embeds: [verifemb]})
-            return;
+        } 
+		
+	if (role === "gif_meme") {
+          await target.roles.add("967141844054081597")
+          interaction.editReply({embeds: [verifemb]})
+          return;
         }
         }
 
